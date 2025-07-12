@@ -4,11 +4,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Y.Contract.Root</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>GuilhermOM</Authors>
+    <Company>Y</Company>
+    <PackageDescription>Shares a bunch of contracts among Y applications</PackageDescription>
+    <RepositoryUrl>https://github.com/GuilhermeOM/y-contract</RepositoryUrl>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Authentication\" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Y.Contract.SharedKernel\Y.Contract.SharedKernel.csproj" />

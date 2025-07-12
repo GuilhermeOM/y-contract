@@ -4,6 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Y.Contract.SharedKernel</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>GuilhermOM</Authors>
+    <Company>Y</Company>
+    <PackageDescription>Shares base classes/contracts used by Y.Contract.Root</PackageDescription>
+    <RepositoryUrl>https://github.com/GuilhermeOM/y-contract</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
