@@ -22,7 +22,7 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
     - name: Add source
-      run: dotnet nuget add source --username GuilhermeOM --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/GuilhermeOM/index.json"
+      run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/GuilhermeOM/index.json"
     - name: Push Y.Contract.Root
       run: dotnet nuget push Y.Contract.Root.${VERSION}.nupkg --source "github" --api-key ${{ secrets.GITHUB_TOKEN }}
     - name: Push Y.Contract.SharedKernel
