@@ -5,6 +5,6 @@ public sealed record CreateProfileEvent : Event
 {
     public static string Exchange => "create-profile";
 
-    public Guid UserId { get; set; }
+    public required Guid UserId { get; set; }
     public string Name { get; set; } = string.Empty;
 }
