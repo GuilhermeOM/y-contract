@@ -2,5 +2,5 @@
 public enum EmailTemplate
 {
     UNKNOWN = 0,
-    ACCOUNT_ACTIVATION = 1,
+    ACCOUNT_VERIFICATION = 1,
 }
