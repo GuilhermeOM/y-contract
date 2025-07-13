@@ -22,8 +22,6 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
     - name: Push Y.Contract.Root
-      run: dotnet nuget push Y.Contract.Root.${VERSION}.nupkg --source https://github.com/GuilhermeOM/y-contract --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push Y.Contract.Root.${VERSION}.nupkg --source https://github.com/GuilhermeOM/y-contract --api-key ${{ secrets.GITHUB_TOKEN }}
     - name: Push Y.Contract.SharedKernel
-      run: dotnet nuget push Y.Contract.SharedKernel.${VERSION}.nupkg --source https://github.com/GuilhermeOM/y-contract --api-key ${GITHUB_TOKEN}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: dotnet nuget push Y.Contract.SharedKernel.${VERSION}.nupkg --source https://github.com/GuilhermeOM/y-contract --api-key ${{ secrets.GITHUB_TOKEN }}
