@@ -9,5 +9,5 @@ public sealed record SendEmailEvent : Event
 
     public required string Email { get; set; }
     public EmailTemplate Template { get; set; } = EmailTemplate.UNKNOWN;
-    public Dictionary<string, string> Properties { get; private set; } = [];
+    public Dictionary<string, string> Properties { get; set; } = [];
 }
