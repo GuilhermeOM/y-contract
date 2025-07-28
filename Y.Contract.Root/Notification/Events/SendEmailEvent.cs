@@ -8,6 +8,6 @@ public sealed record SendEmailEvent : Event
     public static string RoutingKey => "send.email";
 
     public required string Email { get; set; }
-    public EmailTemplate Template { get; set; } = EmailTemplate.UNKNOWN;
+    public EmailTemplate Template { get; set; } = EmailTemplate.Uknown;
     public Dictionary<string, string> Properties { get; set; } = [];
 }
