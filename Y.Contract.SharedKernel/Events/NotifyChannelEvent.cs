@@ -1,4 +1,4 @@
-﻿using Y.Contract.SharedKernel.Abstractions;
+﻿using Y.Contract.SharedKernel.Abstractions.Messaging;
 
 namespace Y.Contract.SharedKernel.Events;
 public sealed record NotifyChannelEvent : IKafkaMessage
