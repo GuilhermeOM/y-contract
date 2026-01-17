@@ -1,4 +1,4 @@
-﻿namespace Y.Contract.Root.Authentication.Shared;
+﻿namespace Y.Contract.SharedKernel.Enums;
 public enum Role
 {
     Admin = 0,
